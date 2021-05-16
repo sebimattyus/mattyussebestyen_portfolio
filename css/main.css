@@ -1,0 +1,205 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+*,*::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*--layout---*/
+	body{
+		display: grid;
+		grid-template-areas: 
+			"fejlec fejlec"
+			"kep szoveg"
+			"lablec lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+	}
+	header{
+		background-color: lightblue;
+		grid-area:fejlec;
+	}
+	main.kep{
+		background-color: #fff3e6;
+		grid-area:kep;
+		padding: 1.5rem;
+		text-align: center;
+		
+	}
+	main.szoveg{
+		background-color: #fff3e6;
+		font-size: 2.2rem;
+		grid-area:szoveg;
+		text-align: center;
+		padding: 3rem;
+	}
+	img{
+	max-width: 100%;
+	}
+	footer{
+		background-color: lightblue;
+		grid-area:lablec;
+	}
+	
+
+/*header*/
+	header{
+		line-height: 3.3rem;
+		font-size: .9rem;
+		text-align: right;
+		padding: .85rem 1rem;
+
+	}
+
+	a{
+		padding: 1rem;
+
+	}
+	
+	header .menu{
+		color: #2672ff;
+		font-weight:800;
+		text-decoration: underline overline;
+
+		font-size: 1.15rem;
+		padding: :  1rem;
+		margin: 1 1.5rem;
+		border-radius: 0.4rem;
+	}
+	header .menu:hover{
+		color: #d11b3d;
+		-webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.74); 
+	box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.74);
+	}
+	.nev{
+		font-size:3rem;
+		font-family: Roboto Mono;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		display: inline-block;
+		float: left;
+		text-align: left;
+		min-width: min-content;
+
+	}
+	.menusor{
+		display: inline-block;
+		margin-top: .4rem;
+	}
+/*footer*/
+	footer{
+		line-height: 3rem;
+		
+
+	}
+	.lablec_bal{
+		font-size: 0.9rem;
+		display: inline-block;
+		min-width: min-content;
+		margin-left: 1rem;
+		margin-right: 0.4rem;
+		text-decoration:underline;
+
+	}
+	.lablec_jobb{
+		font-size: 0.9rem;
+		display: inline-block;
+		min-width: min-content;
+		margin-left: 0rem;
+		margin-right: 0.4rem;
+		text-decoration:underline;
+	}
+	footer .email{
+		color: #0353a3;
+		
+		
+		
+	}
+	footer .telefon{
+		color: #0353a3;	
+	}
+	footer .forras{
+		display: inline-block;
+		font-size: 0.9rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		text-decoration: underline;
+		font-weight: 300rem;
+	}
+	footer .link:hover{
+		color: #d11b3d;
+		
+	}
+
+
+/*--kep--*/
+	.kep{
+		text-align: center;
+		
+		padding: 16px;
+	}
+	.kep img{
+		max-height: 20rem;
+		border: 2px solid black;
+		
+		
+		margin: 0 auto;
+	}
+	.kep p{
+		font-size: 1rem;
+		
+		
+	}
+/*tablo*/
+	.tablo{
+		text-align: center;
+		background-color: #fff3e6;
+		font-size: 2rem;
+		padding: 3rem;
+	}
+	.tablo img{
+		max-height: 20rem;
+		border: 2px solid black;
+		
+		margin: 0 auto;
+	}
+/*vivas*/
+	.kep_vivas{
+		padding: 0.1rem;
+		text-align: left;
+	}
+	.kep_vivas img{ 
+		max-height: 15rem;
+
+
+	}
+
+/*--tanulmanyok--*/
+	.kep_tanulmanyok{
+		font-size: 3rem;
+
+	}
+	.kep_tanulmanyok img{
+		max-height: 15rem;
+	}
+/*terv*/
+	main .tervek {
+		max-height: 19rem;
+		margin: 3rem;
+	}
+	main .tervek:hover{
+		-webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.74); 
+	box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.74);
+	}
+	main .leiras{
+		font-weight: 300;
+		text-align: left;
+	}
